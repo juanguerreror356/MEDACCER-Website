@@ -111,6 +111,45 @@ h1 .h1-underline{position:relative;display:inline-block}h1 .h1-underline:after{c
 .legal-nav a{padding:9px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.14);color:#c6d6d3;font-size:13px;font-weight:600}
 .legal-nav a:hover,.legal-nav a[aria-current=page]{border-color:#5eead4;color:#5eead4}
 @media(max-width:520px){.legal-card{padding:32px 22px}.legal-card h1{font-size:1.7rem}}
+/* BLOG índice */
+.blog-hero{background:radial-gradient(120% 85% at 50% -10%,#123c42,#0a2024);color:#e7f1ef;padding:118px 20px 54px;text-align:center}
+.blog-hero .section-index{color:#5eead4;display:inline-block;margin-bottom:14px}
+.blog-hero h1{color:#f3f8f6;font-size:2.4rem;line-height:1.15;margin:0 0 12px;max-width:640px;margin-inline:auto}
+.blog-hero p{color:#b7c8c5;max-width:520px;margin:0 auto;font-size:17px;line-height:1.6}
+.blog-main{padding:56px 20px 80px;background:var(--ivory)}
+.blog-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.blog-card{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .3s ease,box-shadow .3s ease}
+.blog-card:hover{transform:translateY(-6px);box-shadow:0 34px 74px -34px rgba(11,46,51,.35)}
+.blog-card-media{height:170px;background:linear-gradient(150deg,var(--accent),#0a655b);position:relative;display:flex;align-items:flex-end;padding:18px}
+.blog-card-media.derma{background:linear-gradient(150deg,#db2777,#4a132f)}
+.blog-card-tag{background:rgba(255,255,255,.92);color:var(--navy);font-size:12px;font-weight:700;padding:6px 12px;border-radius:999px}
+.blog-card-body{padding:24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.blog-card-body h2{font-size:1.3rem;line-height:1.3;margin:0}
+.blog-card-body p{color:var(--gray);font-size:15px;line-height:1.6;margin:0;flex:1}
+.blog-card-meta{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--gray);margin-top:4px}
+.blog-card-more{color:var(--teal);font-weight:600;font-size:14px}
+/* ARTÍCULO */
+.article-hero{background:radial-gradient(120% 85% at 20% -10%,#123c42,#0a2024);color:#e7f1ef;padding:110px 20px 48px}
+.article-hero .article-inner{max-width:720px;margin:0 auto}
+.article-hero .breadcrumb,.article-hero .breadcrumb a{color:#9fb6b2}
+.article-tag{display:inline-block;margin:8px 0 16px;padding:6px 14px;border-radius:999px;background:rgba(94,234,212,.12);border:1px solid rgba(94,234,212,.32);color:#7de0d0;font-size:12px;font-weight:700;letter-spacing:.05em}
+.article-hero h1{color:#f3f8f6;font-size:2.3rem;line-height:1.18;margin:0 0 16px}
+.article-meta{display:flex;align-items:center;gap:12px;color:#9fb6b2;font-size:14px}
+.article-body{background:var(--white);padding:56px 20px 72px}
+.article-content{max-width:720px;margin:0 auto}
+.article-content h2{font-family:var(--font-serif);font-size:1.7rem;line-height:1.25;color:var(--navy);margin:38px 0 14px}
+.article-content h3{font-size:1.25rem;color:var(--navy);margin:26px 0 10px}
+.article-content p,.article-content li{font-size:17px;line-height:1.8;color:#33403d;margin:0 0 18px}
+.article-content ul{padding-left:22px;margin:0 0 18px}
+.article-content li{margin-bottom:8px}
+.article-content b{color:var(--navy)}
+.article-content blockquote{margin:26px 0;padding:20px 24px;border-left:4px solid var(--accent);background:var(--ivory);border-radius:0 12px 12px 0;font-family:var(--font-serif);font-size:1.15rem;color:var(--navy);line-height:1.5}
+.article-cta{margin:40px 0 0;padding:32px;border-radius:20px;background:radial-gradient(120% 100% at 0% 0%,#123c42,#0a2024);color:#e7f1ef;text-align:center}
+.article-cta h3{color:#f3f8f6;font-family:var(--font-serif);font-size:1.5rem;margin:0 0 10px}
+.article-cta p{color:#b7c8c5;margin:0 0 20px}
+.article-key{margin:26px 0;padding:22px 24px;border-radius:16px;background:var(--ivory);border:1px solid var(--line)}
+.article-key b{display:block;color:var(--teal);font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
+@media(max-width:640px){.blog-grid{grid-template-columns:1fr}.blog-hero h1{font-size:1.9rem}.article-hero h1{font-size:1.8rem}.article-content h2{font-size:1.4rem}}
 body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
 .reveal{will-change:opacity,transform}.js .reveal{opacity:0;transform:translateY(26px)}.js .reveal.visible{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
 /* Hero aura + glass phone */

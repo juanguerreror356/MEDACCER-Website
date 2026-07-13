@@ -6,7 +6,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  background: #0A1628;
+  background: #0a2024;
   color: #CBD5E1;
   font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
@@ -35,7 +35,7 @@ body {
   color: #F8FAFC;
   text-decoration: none;
 }
-.blog-nav-logo span { color: #06B6D4; }
+.blog-nav-logo span { color: #5eead4; }
 .blog-nav-links {
   display: flex;
   align-items: center;
@@ -49,7 +49,7 @@ body {
 }
 .blog-nav-links a:hover { color: #F8FAFC; }
 .blog-nav-cta {
-  background: #2563EB;
+  background: #0e8174;
   color: #fff !important;
   padding: 9px 22px;
   border-radius: 8px;
@@ -58,7 +58,7 @@ body {
   transition: background 0.2s, transform 0.15s !important;
 }
 .blog-nav-cta:hover {
-  background: #1D4ED8 !important;
+  background: #0b2e33 !important;
   transform: translateY(-1px);
 }
 
@@ -76,7 +76,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #06B6D4;
+  color: #5eead4;
   margin-bottom: 22px;
 }
 .article-tag::before {
@@ -85,7 +85,7 @@ body {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #06B6D4;
+  background: #5eead4;
   flex-shrink: 0;
 }
 .article-h1 {
@@ -137,11 +137,11 @@ body {
 }
 .article-toc li { font-size: 15px; }
 .article-toc a {
-  color: #93C5FD;
+  color: #7de0d0;
   text-decoration: none;
   transition: color 0.2s;
 }
-.article-toc a:hover { color: #60A5FA; text-decoration: underline; }
+.article-toc a:hover { color: #5eead4; text-decoration: underline; }
 
 /* ── Article body ────────────────────────────────────── */
 .article-body {
@@ -186,8 +186,8 @@ body {
   color: #CBD5E1;
 }
 .article-body strong { color: #F1F5F9; font-weight: 600; }
-.article-body em { color: #93C5FD; font-style: italic; }
-.article-body a { color: #60A5FA; text-decoration: underline; text-underline-offset: 3px; }
+.article-body em { color: #7de0d0; font-style: italic; }
+.article-body a { color: #5eead4; text-decoration: underline; text-underline-offset: 3px; }
 
 /* ── Callout boxes ───────────────────────────────────── */
 .callout {
@@ -196,8 +196,8 @@ body {
   margin: 30px 0;
   border-left: 3px solid;
 }
-.callout-blue  { background: rgba(37,99,235,0.09);  border-color: #3B82F6;  }
-.callout-teal  { background: rgba(6,182,212,0.08);  border-color: #06B6D4;  }
+.callout-blue  { background: rgba(37,99,235,0.09);  border-color: #0e8174;  }
+.callout-teal  { background: rgba(6,182,212,0.08);  border-color: #5eead4;  }
 .callout-amber { background: rgba(245,158,11,0.08); border-color: #F59E0B;  }
 .callout-green { background: rgba(16,185,129,0.08); border-color: #10B981;  }
 .callout-red   { background: rgba(239,68,68,0.07);  border-color: #EF4444;  }
@@ -210,8 +210,8 @@ body {
   margin-bottom: 10px;
   display: block;
 }
-.callout-blue  .callout-label { color: #60A5FA; }
-.callout-teal  .callout-label { color: #22D3EE; }
+.callout-blue  .callout-label { color: #5eead4; }
+.callout-teal  .callout-label { color: #7de0d0; }
 .callout-amber .callout-label { color: #FCD34D; }
 .callout-green .callout-label { color: #34D399; }
 .callout-red   .callout-label { color: #FCA5A5; }
@@ -219,7 +219,7 @@ body {
 .callout ul { margin-bottom: 0; }
 
 /* Semantic callout aliases */
-.callout-info    { background: rgba(37,99,235,0.09);  border-color: #3B82F6; }
+.callout-info    { background: rgba(37,99,235,0.09);  border-color: #0e8174; }
 .callout-warning { background: rgba(245,158,11,0.08); border-color: #F59E0B; }
 .callout-success { background: rgba(16,185,129,0.08); border-color: #10B981; }
 
@@ -240,7 +240,7 @@ body {
   font-size: 52px;
   font-weight: 400;
   letter-spacing: -0.03em;
-  color: #2563EB;
+  color: #0e8174;
   line-height: 1;
   display: block;
   margin-bottom: 8px;
@@ -272,7 +272,7 @@ body {
 }
 .compare-table th {
   background: rgba(37, 99, 235, 0.14);
-  color: #93C5FD;
+  color: #7de0d0;
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 0.06em;
@@ -295,13 +295,13 @@ body {
 .compare-table .partial { color: #FCD34D; }
 .compare-table .medaccer-row td {
   background: rgba(37, 99, 235, 0.07);
-  border-left: 2px solid #2563EB;
+  border-left: 2px solid #0e8174;
 }
-.compare-table .medaccer-row td:first-child { font-weight: 600; color: #93C5FD; }
+.compare-table .medaccer-row td:first-child { font-weight: 600; color: #7de0d0; }
 
 /* ── WhatsApp demo block ─────────────────────────────── */
 .wa-demo {
-  background: #1A2744;
+  background: #123c42;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
   padding: 20px;
@@ -321,7 +321,7 @@ body {
 .wa-out {
   align-self: flex-end;
   margin-left: auto;
-  background: #2563EB;
+  background: #0e8174;
   color: #fff;
   border-radius: 14px 14px 4px 14px;
   padding: 10px 14px;
@@ -382,7 +382,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #2563EB;
+  background: #0e8174;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -393,7 +393,7 @@ body {
   box-shadow: 0 4px 24px rgba(37, 99, 235, 0.3);
 }
 .btn-cta-primary:hover {
-  background: #1D4ED8;
+  background: #0b2e33;
   transform: translateY(-2px);
   box-shadow: 0 8px 32px rgba(37, 99, 235, 0.4);
   color: #fff;
@@ -429,7 +429,7 @@ body {
 .article-cta-btn {
   display: inline-flex;
   align-items: center;
-  background: #2563EB;
+  background: #0e8174;
   color: #fff;
   font-size: 15px;
   font-weight: 600;
@@ -440,7 +440,7 @@ body {
   box-shadow: 0 4px 22px rgba(37,99,235,0.32);
 }
 .article-cta-btn:hover {
-  background: #1D4ED8;
+  background: #0b2e33;
   transform: translateY(-2px);
   box-shadow: 0 8px 30px rgba(37,99,235,0.42);
   color: #fff;
@@ -455,7 +455,7 @@ body {
 
 /* ── Footer ──────────────────────────────────────────── */
 .blog-footer {
-  background: #060D1A;
+  background: #061518;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   padding: 48px 40px;
   text-align: center;
@@ -491,7 +491,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #06B6D4;
+  color: #5eead4;
   margin-bottom: 16px;
   display: flex;
   align-items: center;
@@ -501,7 +501,7 @@ body {
   content: '';
   width: 6px; height: 6px;
   border-radius: 50%;
-  background: #06B6D4;
+  background: #5eead4;
   flex-shrink: 0;
 }
 .blog-index-hero h1 {
@@ -550,7 +550,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #06B6D4;
+  color: #5eead4;
 }
 .blog-card h2 {
   font-family: 'Instrument Serif', Georgia, serif;
@@ -578,7 +578,7 @@ body {
 }
 .blog-card-read {
   background: rgba(37,99,235,0.15);
-  color: #93C5FD;
+  color: #7de0d0;
   font-size: 11px;
   font-weight: 600;
   padding: 4px 10px;
