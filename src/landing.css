@@ -52,9 +52,26 @@ h1 .h1-underline:after{background:linear-gradient(90deg,var(--accent),#2dd4bf);h
 .price-card{transition:transform .3s ease,box-shadow .3s ease}.price-card:hover{transform:translateY(-6px);box-shadow:0 34px 74px -34px rgba(11,46,51,.32)}
 .price-card.popular{position:relative;isolation:isolate}
 .price-card.popular::after{content:'';position:absolute;inset:0;z-index:-1;border-radius:inherit;padding:2px;background:conic-gradient(from var(--ang),var(--accent),#5eead4,var(--accent-ink),var(--accent));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:spinBorder 6s linear infinite}
+/* Video play button glass + ring */
+.video-play{background:rgba(255,255,255,.16)!important;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.5)!important;color:#fff!important;box-shadow:0 14px 40px rgba(11,46,51,.4)}
+.video-play-ring{position:absolute;inset:0;border-radius:50%;border:2px solid rgba(255,255,255,.6);animation:pulseRing 2.4s ease-out infinite}
+/* Video lightbox modal */
+.video-modal{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(6,18,20,.86);backdrop-filter:blur(8px);animation:fadeIn .3s ease}.video-modal[hidden]{display:none}.video-modal-inner{position:relative;width:min(960px,100%);aspect-ratio:16/9;background:#000;border-radius:18px;overflow:hidden;box-shadow:0 40px 120px -30px rgba(0,0,0,.8)}.video-modal-inner video,.video-modal-inner iframe{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:contain;background:#000}.video-modal-close{position:absolute;top:18px;right:20px;z-index:2;width:44px;height:44px;border:1px solid rgba(255,255,255,.3);border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:26px;line-height:1;cursor:pointer;transition:background .2s}.video-modal-close:hover{background:rgba(255,255,255,.24)}
+/* Founder avatar + actions */
+.founder-avatar{width:76px;height:76px;display:grid;place-items:center;flex:0 0 auto;border-radius:50%;background:linear-gradient(145deg,#12a594,var(--navy));color:#fff;font-family:var(--font-serif);font-size:28px;box-shadow:0 12px 30px -12px rgba(14,129,116,.7)}
+.founder-actions{display:flex;align-items:center;gap:14px;margin-top:12px}.founder-linkedin{width:38px;height:38px;display:grid;place-items:center;border-radius:10px;background:var(--ivory);color:var(--teal)!important;transition:transform .2s,background .2s}.founder-linkedin:hover{transform:translateY(-2px);background:#e8f3f0}.founder-wa{display:inline-flex;align-items:center;gap:6px;font-size:14px!important;font-weight:600;color:var(--teal)!important}.founder-wa span{transition:transform .2s}.founder-wa:hover span{transform:translateX(3px)}
+/* Mobile menu blur overlay */
+.menu-overlay{position:fixed;inset:0;z-index:90;background:rgba(6,18,20,.4);backdrop-filter:blur(8px);animation:fadeIn .25s ease}.menu-overlay[hidden]{display:none}body.menu-open{overflow:hidden}
+.site-header{z-index:100}.mobile-menu{position:relative;z-index:101}
+/* WhatsApp float: brand green + pulse rings */
+.whatsapp-float{background:#25d366!important;color:#fff!important;box-shadow:0 12px 30px -8px rgba(37,211,102,.6)!important;overflow:visible}.wa-ring{position:absolute;inset:0;border-radius:50%;background:#25d366;z-index:-1;animation:waPulse 2.2s ease-out infinite}.wa-ring-2{animation-delay:1.1s}
 /* Keyframes */
 @keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
 @keyframes spinBorder{to{--ang:360deg}}
 @keyframes messageIn{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes pulseRing{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.7);opacity:0}}
+@keyframes waPulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(2.1);opacity:0}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @media(max-width:850px){.demo-section{background:radial-gradient(140% 100% at 50% -6%,#123c42,#0a2024)!important}.phone-card{animation:none}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}.typing>span,.phone-card,.price-card.popular::after,.message{animation:none}.button,.result-card,.price-card{transition:none}}
+@media(max-width:640px){.pricing-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-inline:-14px;padding:6px 14px 14px;scrollbar-width:none}.pricing-grid::-webkit-scrollbar{display:none}.price-card{min-width:84%;scroll-snap-align:center;flex:0 0 auto}.price-card.popular{transform:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}.typing>span,.phone-card,.price-card.popular::after,.message,.wa-ring,.video-play-ring{animation:none}.button,.result-card,.price-card{transition:none}}
