@@ -65,6 +65,32 @@ h1 .h1-underline:after{background:linear-gradient(90deg,var(--accent),#2dd4bf);h
 .site-header{z-index:100}.mobile-menu{position:relative;z-index:101}
 /* WhatsApp float: brand green + pulse rings */
 .whatsapp-float{background:#25d366!important;color:#fff!important;box-shadow:0 12px 30px -8px rgba(37,211,102,.6)!important;overflow:visible}.wa-ring{position:absolute;inset:0;border-radius:50%;background:#25d366;z-index:-1;animation:waPulse 2.2s ease-out infinite}.wa-ring-2{animation-delay:1.1s}
+/* ROADMAP / Innovación continua */
+.roadmap-section{background:radial-gradient(120% 90% at 50% -10%,#123c42,#0a2024)!important;color:#e7f1ef;position:relative;overflow:hidden}
+.roadmap-section::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(60% 50% at 85% 20%,rgba(94,234,212,.10),transparent 60%),radial-gradient(50% 45% at 10% 80%,rgba(18,165,148,.12),transparent 60%)}
+.roadmap-section .section-heading{position:relative;z-index:1}
+.roadmap-section .section-heading h2{color:#f3f8f6}.roadmap-section .section-heading h2 em{color:#5eead4;font-style:italic}
+.roadmap-section .section-heading p{color:#a9c1bd}
+.roadmap-track{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:36px}
+.roadmap-col{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:26px 22px;backdrop-filter:blur(4px)}
+.roadmap-badge{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.04em;padding:8px 14px;border-radius:999px;margin-bottom:20px}
+.rb-dot{width:8px;height:8px;border-radius:50%}
+.roadmap-badge.live{background:rgba(46,204,113,.14);color:#63e6a6}.roadmap-badge.live .rb-dot{background:#37d67a;box-shadow:0 0 0 4px rgba(55,214,122,.18);animation:blip 2s ease-in-out infinite}
+.roadmap-badge.soon{background:rgba(94,234,212,.13);color:#5eead4}.roadmap-badge.soon .rb-dot{background:#5eead4}
+.roadmap-badge.dev{background:rgba(217,148,19,.16);color:#f0b755}.roadmap-badge.dev .rb-dot{background:#e0a52a}
+.roadmap-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:16px}
+.roadmap-list li{display:flex;gap:13px;align-items:flex-start}
+.rl-ic{flex:0 0 auto;width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:rgba(255,255,255,.06);color:#9fded2;font-size:15px;transition:transform .25s,background .25s,color .25s}
+.rl-ic svg{width:19px;height:19px}
+.rl-ic.ok{background:rgba(55,214,122,.16);color:#63e6a6;font-weight:700}
+.roadmap-list li:hover .rl-ic{transform:translateY(-3px) scale(1.05);background:rgba(94,234,212,.18);color:#bff5ec}
+.roadmap-list li b{display:block;font-size:14.5px;color:#f1f7f5;line-height:1.3}
+.roadmap-list li span{display:block;font-size:12.5px;color:#94aeaa;margin-top:2px;line-height:1.4}
+.roadmap-cta{position:relative;z-index:1;text-align:center;max-width:620px;margin:0 auto}
+.roadmap-cta p{color:#b7ccc8;font-size:15px;margin:0 0 20px}
+.roadmap-section .section-index.light{color:#5eead4}
+@keyframes blip{0%,100%{opacity:1}50%{opacity:.4}}
+@media(max-width:900px){.roadmap-track{grid-template-columns:1fr;gap:14px}}
 /* Keyframes */
 @keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
 @keyframes spinBorder{to{--ang:360deg}}
