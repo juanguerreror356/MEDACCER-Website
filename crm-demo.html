@@ -193,6 +193,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   .tbl td{border:0;padding:4px 16px}
 }
 @media(prefers-reduced-motion:reduce){.wave i{animation:none;height:50%}.screen{animation:none}}
+.synthetic-banner{margin:0 0 20px;padding:10px 16px;border-radius:10px;background:rgba(94,234,212,.1);border:1px solid rgba(94,234,212,.28);color:#0b6c60;font-size:12.5px;line-height:1.4;font-weight:500}
 </style>
 </head>
 <body>
@@ -222,7 +223,7 @@ button{font:inherit;cursor:pointer;border:0;background:none}
       <button class="menu-toggle" data-menu aria-label="Abrir menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
       <div>
         <div class="topbar-title" data-screen-title>Buenos días, Dr. Carrillo</div>
-        <div class="topbar-sub" data-screen-date>Martes, 13 de julio · 8 citas hoy</div>
+        <div class="topbar-sub" data-screen-date>8 citas hoy</div>
       </div>
       <div class="topbar-right">
         <div class="tb-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg> Buscar paciente…</div>
@@ -231,6 +232,8 @@ button{font:inherit;cursor:pointer;border:0;background:none}
     </header>
 
     <div class="screen-wrap">
+
+      <p class="synthetic-banner">Demostración con datos 100% sintéticos. Ningún dato corresponde a una persona real.</p>
 
       <!-- DASHBOARD -->
       <section class="screen active" data-screen-panel="dashboard">
@@ -284,15 +287,15 @@ button{font:inherit;cursor:pointer;border:0;background:none}
           <table class="tbl">
             <thead><tr><th>Paciente</th><th>Teléfono</th><th>Última visita</th><th>Próxima cita</th><th>Estado</th></tr></thead>
             <tbody>
-              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#0e8174">LR</span> Laura Restrepo</div></td><td class="mono">+57 310 245 8891</td><td>28 jun 2026</td><td>Hoy, 9:00 a.m.</td><td><span class="chip green">Activa</span></td></tr>
-              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#0891b2">AM</span> Andrés Mora</div></td><td class="mono">+57 321 662 1043</td><td>—</td><td>Hoy, 9:40 a.m.</td><td><span class="chip teal">Nuevo</span></td></tr>
-              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#7c5cd6">CO</span> Carolina Ospina</div></td><td class="mono">+57 300 512 7788</td><td>15 may 2026</td><td>Hoy, 10:30 a.m.</td><td><span class="chip green">Activa</span></td></tr>
-              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#d97706">JB</span> Julián Betancur</div></td><td class="mono">+57 315 908 3320</td><td>02 jul 2026</td><td>Hoy, 11:15 a.m.</td><td><span class="chip amber">Pendiente</span></td></tr>
-              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#db2777">VG</span> Valentina Gómez</div></td><td class="mono">+57 312 447 6650</td><td>19 jun 2026</td><td>Hoy, 2:00 p.m.</td><td><span class="chip green">Activa</span></td></tr>
-              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#0e8174">SR</span> Santiago Ruiz</div></td><td class="mono">+57 318 220 9917</td><td>10 abr 2026</td><td>Hoy, 3:00 p.m.</td><td><span class="chip green">Activa</span></td></tr>
-              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#3f9142">DC</span> Daniela Cárdenas</div></td><td class="mono">+57 301 775 4408</td><td>21 may 2026</td><td>Hoy, 4:15 p.m.</td><td><span class="chip green">Activa</span></td></tr>
-              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#0891b2">FN</span> Felipe Naranjo</div></td><td class="mono">+57 320 118 5573</td><td>—</td><td>Hoy, 5:00 p.m.</td><td><span class="chip teal">Nuevo</span></td></tr>
-              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#667370">MP</span> Mariana Peña</div></td><td class="mono">+57 313 559 2201</td><td>30 jun 2026</td><td>16 jul, 10:00 a.m.</td><td><span class="chip gray">Seguimiento</span></td></tr>
+              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#0e8174">LR</span> Laura Restrepo</div></td><td class="mono">+57 300 000 0001</td><td>28 jun 2026</td><td>Hoy, 9:00 a.m.</td><td><span class="chip green">Activa</span></td></tr>
+              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#0891b2">AM</span> Andrés Mora</div></td><td class="mono">+57 300 000 0002</td><td>—</td><td>Hoy, 9:40 a.m.</td><td><span class="chip teal">Nuevo</span></td></tr>
+              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#7c5cd6">CO</span> Carolina Ospina</div></td><td class="mono">+57 300 000 0003</td><td>15 may 2026</td><td>Hoy, 10:30 a.m.</td><td><span class="chip green">Activa</span></td></tr>
+              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#d97706">JB</span> Julián Betancur</div></td><td class="mono">+57 300 000 0004</td><td>02 jul 2026</td><td>Hoy, 11:15 a.m.</td><td><span class="chip amber">Pendiente</span></td></tr>
+              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#db2777">VG</span> Valentina Gómez</div></td><td class="mono">+57 300 000 0005</td><td>19 jun 2026</td><td>Hoy, 2:00 p.m.</td><td><span class="chip green">Activa</span></td></tr>
+              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#0e8174">SR</span> Santiago Ruiz</div></td><td class="mono">+57 300 000 0006</td><td>10 abr 2026</td><td>Hoy, 3:00 p.m.</td><td><span class="chip green">Activa</span></td></tr>
+              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#3f9142">DC</span> Daniela Cárdenas</div></td><td class="mono">+57 300 000 0007</td><td>21 may 2026</td><td>Hoy, 4:15 p.m.</td><td><span class="chip green">Activa</span></td></tr>
+              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#0891b2">FN</span> Felipe Naranjo</div></td><td class="mono">+57 300 000 0008</td><td>—</td><td>Hoy, 5:00 p.m.</td><td><span class="chip teal">Nuevo</span></td></tr>
+              <tr><td><div class="pt-name"><span class="pt-ava" style="background:#667370">MP</span> Mariana Peña</div></td><td class="mono">+57 300 000 0009</td><td>30 jun 2026</td><td>16 jul, 10:00 a.m.</td><td><span class="chip gray">Seguimiento</span></td></tr>
             </tbody>
           </table>
         </div>
@@ -343,12 +346,19 @@ button{font:inherit;cursor:pointer;border:0;background:none}
   var panels=document.querySelectorAll('[data-screen-panel]');
   var titleEl=document.querySelector('[data-screen-title]');
   var dateEl=document.querySelector('[data-screen-date]');
+  var DIAS=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+  var MESES=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  var _h=new Date();
+  function cap(s){return s.charAt(0).toUpperCase()+s.slice(1);}
+  var diaSem=cap(DIAS[_h.getDay()]);
+  var fechaLarga=diaSem+', '+_h.getDate()+' de '+MESES[_h.getMonth()];
+  var fechaFull=fechaLarga+' de '+_h.getFullYear();
   var meta={
-    dashboard:['Buenos días, Dr. Carrillo','Martes, 13 de julio · 8 citas hoy'],
-    agenda:['Agenda','Martes, 13 de julio de 2026'],
+    dashboard:['Buenos días, Dr. Carrillo',fechaLarga+' · 8 citas hoy'],
+    agenda:['Agenda',fechaFull],
     pacientes:['Pacientes','412 activos · 3 nuevos esta semana'],
     conversaciones:['Conversaciones','Ada gestionó 11 mensajes hoy'],
-    notas:['Notas clínicas','Última consulta · 13 de julio']
+    notas:['Notas clínicas','Última consulta · '+_h.getDate()+' de '+MESES[_h.getMonth()]]
   };
   function show(name){
     panels.forEach(function(p){p.classList.toggle('active',p.dataset.screenPanel===name)});
