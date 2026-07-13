@@ -26,6 +26,15 @@
     .auth-secondary a{color:#5eead4;font-weight:600}
     .auth-support{margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);color:#8fa8a4;font-size:13px}
     .auth-support a{color:#bfe9e1}
+    .toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,140%);z-index:300;width:min(420px,calc(100% - 32px));background:#0f363c;border:1px solid rgba(94,234,212,.28);border-radius:16px;padding:18px 20px;box-shadow:0 30px 80px -24px rgba(0,0,0,.75);text-align:left;opacity:0;transition:transform .45s cubic-bezier(.2,.8,.2,1),opacity .45s}
+    .toast.show{transform:translate(-50%,0);opacity:1}
+    .toast-head{display:flex;align-items:center;gap:9px;color:#f3f8f6;font-weight:600;font-size:14.5px;margin:0 0 4px}
+    .toast-head .toast-dot{width:9px;height:9px;border-radius:50%;background:#e0a52a;box-shadow:0 0 0 4px rgba(224,165,42,.18)}
+    .toast p{margin:0 0 12px;color:#b7ccc8;font-size:13.5px;line-height:1.5}
+    .toast-actions{display:flex;gap:10px;align-items:center}
+    .toast .button-small{padding:9px 16px;font-size:13px}
+    .toast-close{margin-left:auto;background:none;border:0;color:#8fa8a4;font-size:20px;line-height:1;cursor:pointer;padding:2px 6px}
+    .toast-close:hover{color:#e7f1ef}
   </style>
 </head>
 <body data-accent="general">
@@ -37,11 +46,26 @@
     <div class="auth-logo" aria-hidden="true">M</div>
     <h1>El panel de su consultorio está en su app</h1>
     <p class="auth-sub">MEDACCER funciona desde la aplicación de su consultorio. Abra la app para ver su agenda, conversaciones y notas clínicas.</p>
-    <a class="button button-primary" href="#" aria-label="Abrir MEDACCER App">Abrir MEDACCER App <span aria-hidden="true">↗</span></a>
+    <button class="button button-primary" type="button" data-open-app aria-label="Abrir MEDACCER App">Abrir MEDACCER App <span aria-hidden="true">↗</span></button>
     <div class="auth-divider">o</div>
     <p class="auth-secondary">¿Aún no tiene cuenta?<br><a data-demo-link target="_blank" rel="noopener noreferrer">Solicite una demostración por WhatsApp →</a></p>
     <p class="auth-support">Soporte: <a href="mailto:contacto@medaccer.com">contacto@medaccer.com</a></p>
   </section>
 </main>
+<div class="toast" data-toast role="status" aria-live="polite">
+  <p class="toast-head"><span class="toast-dot" aria-hidden="true"></span> El panel estará disponible pronto <button class="toast-close" type="button" data-toast-close aria-label="Cerrar aviso">&times;</button></p>
+  <p>Estamos afinando los últimos detalles. Por ahora, escríbanos por WhatsApp y gestionamos su consultorio con usted.</p>
+  <div class="toast-actions"><a class="button button-primary button-small" data-demo-link target="_blank" rel="noopener noreferrer">Ir a WhatsApp →</a></div>
+</div>
+<script>
+  (function(){
+    var btn=document.querySelector('[data-open-app]'),toast=document.querySelector('[data-toast]'),closeBtn=document.querySelector('[data-toast-close]'),t;
+    function show(){toast.classList.add('show');clearTimeout(t);t=setTimeout(hide,6000)}
+    function hide(){toast.classList.remove('show')}
+    btn&&btn.addEventListener('click',show);
+    closeBtn&&closeBtn.addEventListener('click',hide);
+    addEventListener('keydown',function(e){if(e.key==='Escape')hide()});
+  })();
+</script>
 <footer class="site-footer"><div class="section-shell footer-grid"><div><a class="brand footer-brand" href="/"><span class="brand-mark">M</span><span>MEDACCER</span></a><p>IA práctica para consultorios médicos en Colombia.</p><small>MEDACCER es una marca en etapa temprana.</small></div><div><strong>Producto</strong><a href="/#demo">Ada</a><a href="/#como-funciona">Cómo funciona</a><a href="/#calculadora">Calculadora de ahorro</a><a href="/#precios">Precios</a></div><div><strong>Soluciones</strong><a href="/software-odontologos.html">Software para odontólogos</a><a href="/agenda-whatsapp-consultorios.html">Agenda por WhatsApp</a><a href="/rda-resolucion-1888.html">RDA y Resolución 1888</a></div><div><strong>Confianza</strong><a href="/seguridad.html">Seguridad</a><a href="/privacidad.html">Privacidad</a><a href="/terminos.html">Términos</a><a href="/datos.html">Tratamiento de datos</a></div><div><strong>Contacto</strong><a href="mailto:contacto@medaccer.com">contacto@medaccer.com</a><a href="https://wa.me/573023571724" target="_blank" rel="noopener noreferrer">+57 302 357 1724</a><span>Bogotá, Colombia</span></div></div><div class="section-shell footer-bottom"><span>© 2026 MEDACCER</span><span>Fundado por Juan Sebastián Guerrero Rodríguez</span></div></footer>
 </body></html>
