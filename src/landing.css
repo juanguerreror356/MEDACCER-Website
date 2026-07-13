@@ -168,6 +168,7 @@ h1 .h1-underline:after{background:linear-gradient(90deg,var(--accent),#2dd4bf);h
 .demo-section .specialty-chip{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14);color:#e9f1ef}
 .demo-shell{border:1px solid rgba(255,255,255,.08)!important;box-shadow:0 0 0 1px rgba(255,255,255,.05),0 50px 130px -45px rgba(0,0,0,.75),0 0 90px -25px rgba(var(--accent-rgb),.4)!important}
 .message{animation:messageIn .45s cubic-bezier(.2,.7,.2,1) both}
+@media(max-width:850px){.demo-tabs{display:flex!important;grid-template-columns:none!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;padding-bottom:6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}.demo-tabs::-webkit-scrollbar{display:none}.demo-tabs button{width:auto;flex:0 0 auto;scroll-snap-align:start;white-space:nowrap;min-height:48px}}
 /* Results: depth + hover lift */
 .result-card{background:linear-gradient(180deg,#fff,#fafcfb);box-shadow:0 22px 55px -34px rgba(11,46,51,.28);transition:transform .3s ease,box-shadow .3s ease}.result-card:hover{transform:translateY(-6px);box-shadow:0 34px 74px -32px rgba(11,46,51,.38)}
 .result-card.feature{background:linear-gradient(150deg,var(--accent),#0a655b);box-shadow:0 30px 70px -30px rgba(var(--accent-rgb),.55)}
